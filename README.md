@@ -1,0 +1,1 @@
+# FDM-Resonance-Detector-or-Market-Microstructure-Phase-Dynamics.
