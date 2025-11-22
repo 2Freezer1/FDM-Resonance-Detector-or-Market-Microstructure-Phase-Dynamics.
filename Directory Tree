@@ -1,0 +1,28 @@
+FDM-Resonance-Detector/
+│
+├── README.md                 <-- The "Technical Abstract" & Experiment Summary
+├── LICENSE                   <-- MIT License (Standard for Open Science)
+├── requirements.txt          <-- Dependencies (pandas, statsmodels, etc.)
+├── .gitignore                <-- Ignore local logs and __pycache__
+│
+├── src/                      <-- The "Instrument" Source Code
+│   ├── __init__.py
+│   ├── fdm_core.py           <-- The FDM v9.4 Class-based logic
+│   └── utils.py              <-- Helper functions (logging, formatting)
+│
+├── data/                     <-- Experimental Data (Evidence)
+│   ├── raw/                  <-- Raw output logs (e.g., the 12.5h run)
+│   │   └── observation_2025_11_22.log
+│   └── processed/            <-- Cleaned CSVs for plotting (optional)
+│
+├── notebooks/                <-- Jupyter Notebooks for Analysis
+│   ├── 01_null_hypothesis_test.ipynb  <-- Visualizing the "Inertia" run
+│   └── 02_resonance_structure.ipynb   <-- Analyzing AIC drops
+│
+├── docs/                     <-- Theory & Documentation
+│   ├── mathematical_framework.md  <-- The "Rosetta Stone" table (Physics <-> Market)
+│   └── architecture_diagram.png   <-- Visual flow of the Grid Search logic
+│
+└── tests/                    <-- Unit tests (Crucial for credibility)
+    ├── __init__.py
+    └── test_grid_search.py   <-- Proves the model calculates AIC correctly
